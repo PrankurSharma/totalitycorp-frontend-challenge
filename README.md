@@ -4,6 +4,8 @@ Thank you for visiting this project. This project was given as a part of selecti
 
 Technical Skills Used: ReactJS, CSS
 
+Link of deployed website: https://openseatotalityproject.netlify.app
+
 The website is almost similar to the homepage of website: https://opensea.io/ taken from the list provided.
 
 Since the project required us to not use any 3rd party libraries, there is an abundant usage of flexbox in order to design the layout of the website.

@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Totality Project Front-end Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thank you for visiting this project. This project was given as a part of selection process for the position of Frontend Developer.
 
-## Available Scripts
+Technical Skills Used: ReactJS, CSS
 
-In the project directory, you can run:
+The website is almost similar to the homepage of website: https://opensea.io/ taken from the list provided.
 
-### `npm start`
+Since the project required us to not use any 3rd party libraries, there is an abundant usage of flexbox in order to design the layout of the website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Some areas of the original website followed a common structure. So, ReactJS helped me use different components multiple times.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I have made the div sliding buttons with the help of flex in ReactJS. The styling of the pages is done using CSS
 
-### `npm test`
+The concept of flexbox was used several times in this project and helped me to build 90% portion of the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The concept of inline-block display was also used in order to ensure that divs remain in line untill certain width.
 
-### `npm run build`
+Implementing navbar and the footer was also highly reliant on flexbox. Navbar is a little different from the original website when toggled for smaller screen devices but performs the same functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Flexbox and Media Queries are very mobile-friendly. So, I have used them several times in order to tweak the sizes of the components and ensure a smooth interface on all types of devices.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I have ensured that all buttons or anchor tags (<a>) have unique property on clicking or hovering. Since the (<a>) tags should not be used without href attribute, it might throw some warnings but will definitely work. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Note:
 
-### `npm run eject`
+1. Some of the animations that were given by the original website have not been implemented.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. The data in the original website changes every time as the details are fetched from the server but in this project, since the server is not used, some data has been stored in arrays which are exported everywhere by the reactjs file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Images have been stored in the folders in the src folder itself.

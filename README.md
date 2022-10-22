@@ -19,9 +19,7 @@ Implementing navbar and the footer was also highly reliant on flexbox. Navbar is
 Flexbox and Media Queries are very mobile-friendly. So, I have used them several times in order to tweak the sizes of the components and ensure a smooth interface on all types of devices.
 
 
-I have ensured that all buttons or anchor tags have unique property on clicking or hovering. Since the anchor tags should not be used without href attribute, it might throw some warnings but will definitely work.
-
-I have ensured that all buttons or anchor tags have unique property on clicking or hovering. Since the anchor tags should not be used without href attribute, it might throw some warnings but will definitely work. 
+I have ensured that all buttons and anchor tags have a unique property on clicking or hovering. Since the anchor tags should not be used without href attribute, it might throw some warnings but will definitely work.
 
 
 Note:

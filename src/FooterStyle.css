@@ -1,0 +1,274 @@
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background: rgb(31, 81, 255);
+}
+
+.fsubdiv1 {
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.freg {
+    width: 75%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.freg input, .freg button {
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+.freg input {
+    width: 50%;
+}
+
+.freg button {
+    margin-left: 20px;
+    width: 25%;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.freg button:hover {
+    background-color: lightblue;
+}
+
+.parfinnerdiv {
+    margin-left: 10%;
+}
+
+.finnerdiv {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.finnerdiv:hover {
+    opacity: 0.7;
+}
+
+.finnerdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footchild {
+    display: inline-block;
+    width: 50%;
+}
+
+.fchild {
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+.fchild img {
+    width: 40px;
+    height: 40px;
+    margin-left: 45%;
+}
+
+.footchild ul {
+    list-style-type: none;
+}
+
+.mplace {
+    display: inline-block;
+    width: 50%;
+}
+
+.accountstat {
+    display: inline-block;
+    width: 50%;
+}
+
+.fsubdiv2 {
+  display: flex;
+  border-bottom: 2px solid white;
+}
+
+.resources {
+    display: inline-block;
+    width: 50%;
+}
+
+.company {
+    display: inline-block;
+    width: 50%;
+}
+
+.footcontainer2 {
+    display: flex;
+}
+
+.mplaceaccsat {
+    display: flex;
+    width: 50%;
+}
+
+.footchild h4, .footchild h2, .footchild h3, .footchild p {
+    text-align: center;
+    color: white;
+}
+
+.footchild h2, .footchild h3 {
+    font-weight: bold;
+}
+
+.footchild li {
+    text-align: center;
+}
+
+.footchild li a {
+  text-decoration: none;
+}
+
+.rescom {
+    display: flex;
+    width: 50%;
+}
+
+.footcontainer2 h4:hover {
+    color: gray;
+}
+
+.fsubdiv3 {
+    width: 100%;
+    display: flex;
+}
+.copyright {
+    margin-left: 10%;
+}
+.copyright p{
+    color: white;
+}
+.termspri {
+    margin-left: auto;
+}
+.termspri ul {
+    display: flex;
+    margin-right: 20px;
+}
+.termspri li {
+    list-style-type: none;
+    color: white;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+    .fsubdiv1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .fsubdiv1 .footchild {
+        width: 100%;
+    }
+    .freg {
+        width: 100%;
+    }
+    .parfinnerdiv {
+        margin-bottom: 10px;
+    }
+    .fchild {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .fsubdiv1 {
+    display: flex;
+    flex-direction: column;
+}
+.fsubdiv2 {
+  display: flex;
+  flex-direction: column;
+}
+.footchild {
+  width: 100%;
+}
+  .mplace {
+    display: inline-block;
+}
+
+.accountstat {
+    display: inline-block;
+}
+
+.fsubdiv2 {
+  display: flex;
+}
+
+.resources {
+    display: inline-block;
+}
+
+.company {
+    display: inline-block;
+}
+
+.footcontainer2 {
+    display: flex;
+}
+
+.mplaceaccsat {
+    display: flex;
+}
+.rescom {
+    display: flex;
+}
+
+.parfinnerdiv {
+    margin-bottom: 10px;
+}
+.fchild {
+    margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .fsubdiv1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .fsubdiv2 {
+      display: flex;
+      flex-direction: column;
+  }
+    .footchild {
+        width: 100%;
+    }
+    .footcontainer2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .mplaceaccsat {
+        width: 100%;
+    }
+    .rescom {
+        width: 100%;
+    }
+    .mplace {
+      display: inline-block;
+  }
+  .accountstat {
+      display: inline-block;
+  }
+  .resources {
+    display: inline-block;
+  }
+.company {
+    display: inline-block;
+}
+.parfinnerdiv {
+    margin-bottom: 10px;
+}
+.fchild {
+    margin-top: 10px;
+}
+}

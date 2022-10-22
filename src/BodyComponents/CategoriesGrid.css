@@ -1,0 +1,37 @@
+.cat {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.subcat {
+    border: 2px solid black;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    display: inline-block;
+    height: auto;
+    width: 30.2%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subcat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subcatname p {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+    .subcat {
+        border: 2px solid black;
+        margin-right: 30px;
+        margin-bottom: 25px;
+        display: inline-block;
+        height: auto;
+        width: 98%;
+    }
+}

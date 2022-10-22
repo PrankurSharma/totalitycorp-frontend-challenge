@@ -1,0 +1,119 @@
+.parentclasstt {
+    margin-top: 100px;
+}
+
+.parnavtrendtop {
+    display: flex;
+    width: 99%;
+    border-bottom: 2px solid black;
+}
+
+.navtrendtop {
+    display: flex;
+    flex-direction: row;
+}
+
+.navtrendtop a {
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navtrendtop a:hover {
+    color: gray;
+}
+
+.twobtns {
+    margin-left: auto;
+    display: flex;
+}
+
+.twobtns ul {
+    display: flex;
+    padding: 0;
+}
+
+.twobtns li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.twobtns button {
+    background-color: white;
+    height: 50px
+}
+
+.twobtns button:hover {
+    background-color: gray;
+}
+
+.ttbtn1 {
+    color: gray;
+}
+
+.ttbtn3 {
+    color: gray;
+}
+
+.trendtop {
+    display: flex;
+    flex-direction: row;
+}
+
+.subtrendtop {
+    width: 50%;
+}
+
+table {
+    margin-left: 30px;
+    width: 92%;
+}
+
+th {
+    color: gray;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+}
+
+td .allitems {
+    display: flex;
+    flex-direction: row;
+}
+
+.allitems .subitems {
+    margin-right: 20px;
+}
+
+.fprice {
+    color: gray;
+}
+
+.floor1 {
+    color: green;
+}
+
+.floor2 {
+    color: red;
+}
+
+.floor3 {
+    color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+    .subtrendtop {
+        width: 100%;
+    }
+}

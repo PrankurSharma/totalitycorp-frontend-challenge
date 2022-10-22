@@ -12,8 +12,6 @@ Some areas of the original website followed a common structure. So, ReactJS help
 
 I have made the div sliding buttons with the help of flex in ReactJS. The styling of the pages is done using CSS
 
-The concept of flexbox was used several times in this project and helped me to build 90% portion of the website.
-
 The concept of inline-block display was also used in order to ensure that divs remain in line untill certain width.
 
 Implementing navbar and the footer was also highly reliant on flexbox. Navbar is a little different from the original website when toggled for smaller screen devices but performs the same functionality.

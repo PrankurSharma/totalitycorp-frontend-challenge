@@ -1,12 +1,10 @@
-# Totality Project Front-end Website
-
 Thank you for visiting this project. This project was given as a part of selection process for the position of Frontend Developer.
 
 Technical Skills Used: ReactJS, CSS
 
 Link of deployed website: https://openseatotalityproject.netlify.app
 
-The website is almost similar to the homepage of website: https://opensea.io/ taken from the list provided.
+The website is almost similar to the homepage of website: https://opensea.io/ taken from the list provided in the PDF of tasks.
 
 Since the project required us to not use any 3rd party libraries, there is an abundant usage of flexbox in order to design the layout of the website.
 
@@ -22,7 +20,7 @@ Implementing navbar and the footer was also highly reliant on flexbox. Navbar is
 
 Flexbox and Media Queries are very mobile-friendly. So, I have used them several times in order to tweak the sizes of the components and ensure a smooth interface on all types of devices.
 
-I have ensured that all buttons or anchor tags (<a>) have unique property on clicking or hovering. Since the (<a>) tags should not be used without href attribute, it might throw some warnings but will definitely work. 
+I have ensured that all buttons or anchor tags have unique property on clicking or hovering. Since the anchor tags should not be used without href attribute, it might throw some warnings but will definitely work.
 
 Note:
 

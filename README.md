@@ -8,7 +8,7 @@ The website is almost similar to the homepage of website: https://opensea.io/ ta
 
 Since the project required us to not use any 3rd party libraries, there is an abundant usage of flexbox in order to design the layout of the website.
 
-Some areas of the original website followed a common structure. So, ReactJS helped me use different components multiple times.
+Some areas of the original website followed a common structure. So, ReactJS helped me use a single component multiple times.
 
 I have made the div sliding buttons with the help of flex in ReactJS. The styling of the pages is done using CSS
 

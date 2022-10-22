@@ -1,4 +1,4 @@
-Thank you for visiting this project. This project was given as a part of selection process for the position of Frontend Developer.
+Thank you for visiting this project. This project is a part of selection process for Frontend Developer.
 
 Technical Skills Used: ReactJS, CSS
 

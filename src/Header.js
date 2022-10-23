@@ -3,8 +3,9 @@ import { market } from './MarketPlaceData';
 import './HeaderStyle.css';
 import { resourceData } from './ResourcesData';
 import { statData } from './StatsData';
+import { settings } from './SettingsData';
 
-function Header({scrolled}) {
+function Header({scrolled, theme, setTheme}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const [windowSize, set_windowSize] = useState(getWindowSize());
     const [eleClick1, set_eleClick1] = useState(false);
@@ -14,6 +15,15 @@ function Header({scrolled}) {
     function getWindowSize() {
         const {innerWidth, innerHeight} = window;
         return {innerWidth, innerHeight};
+    }
+
+    const toggleTheme = () => {
+        if(theme === 'light'){
+            setTheme('night');
+        }
+        else{
+            setTheme('light');
+        }
     }
     
     useEffect(() => {
@@ -80,7 +90,20 @@ function Header({scrolled}) {
                         <li>
                             <a className='dropbtn' href="#"> Create </a>
                         </li>
-                        <li> <a className='dropbtn' href='#'> <img src={"./nav_images/1.png"}></img> </a> </li>
+                        <div className='dropdownele'>
+                            <li> 
+                                <a className='dropbtn' href='#'> 
+                                    <img src={"./nav_images/1.png"}></img> 
+                                </a> 
+                                <div className='dropdown-content'>
+                                    {settings.map((val) => {
+                                        return (
+                                            <a href="#"> {val} </a>
+                                        );
+                                    })}
+                                </div>
+                            </li>
+                        </div>
                         <li> <a className='dropbtn' href='#'> <img src={"./nav_images/2.png"}></img> </a> </li>
                         <li> <a className='dropbtn' href='#'> <img src={"./nav_images/3.png"}></img> </a> </li>
                     </ul>
@@ -147,6 +170,16 @@ function Header({scrolled}) {
                             set_eleClick2(false);
                             set_eleClick3(false);
                         }}> Create </a>
+                    </li>
+                    <li>
+                        <a href="#"> Night Mode <input 
+                        type="checkbox" 
+                        id="night" 
+                        name="night" 
+                        value="night"
+                        onClick={(e) => {
+                            e.target.checked ? toggleTheme(e.target.value) : toggleTheme('light');
+                        }} /> </a>
                     </li>
                 </ul>
             </div>) : null}

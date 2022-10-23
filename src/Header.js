@@ -3,6 +3,7 @@ import { market } from './MarketPlaceData';
 import './HeaderStyle.css';
 import { resourceData } from './ResourcesData';
 import { statData } from './StatsData';
+import { settings } from './SettingsData';
 
 function Header({scrolled, theme, setTheme}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);

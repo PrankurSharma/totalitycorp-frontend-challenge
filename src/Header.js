@@ -3,7 +3,6 @@ import { market } from './MarketPlaceData';
 import './HeaderStyle.css';
 import { resourceData } from './ResourcesData';
 import { statData } from './StatsData';
-import { settings } from './SettingsData';
 
 function Header({scrolled, theme, setTheme}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -170,16 +169,6 @@ function Header({scrolled, theme, setTheme}) {
                             set_eleClick2(false);
                             set_eleClick3(false);
                         }}> Create </a>
-                    </li>
-                    <li>
-                        <a href="#"> Night Mode <input 
-                        type="checkbox" 
-                        id="night" 
-                        name="night" 
-                        value="night"
-                        onClick={(e) => {
-                            e.target.checked ? toggleTheme(e.target.value) : toggleTheme('light');
-                        }} /> </a>
                     </li>
                 </ul>
             </div>) : null}

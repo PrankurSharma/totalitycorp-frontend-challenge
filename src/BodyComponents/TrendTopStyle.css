@@ -66,8 +66,8 @@
 }
 
 table {
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 30px;
+    width: 92%;
 }
 
 th {
@@ -121,5 +121,9 @@ td .allitems {
 @media screen and (max-width: 700px) {
     .navtrendtop a {
         font-size: 12px;
+    }
+    table {
+        margin-left: 15px;
+        width: 90%;
     }
 }

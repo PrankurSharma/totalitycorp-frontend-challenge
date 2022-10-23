@@ -7,7 +7,7 @@ function ExpNotSpot({notspot, divreq, arr}) {
     const secondary_ref = useRef();
     const [width, set_width] = useState(0);
     const scrollX = (scrollLength) => {
-        ref.current.scrollLeft += scrollLength;
+        ref.current.scrollLeft += (scrollLength + 14);
     }
     useEffect(() => {
         set_width(secondary_ref.current.offsetWidth);   

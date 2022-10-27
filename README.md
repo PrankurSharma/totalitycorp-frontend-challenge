@@ -29,3 +29,5 @@ Note:
 2. The data in the original website changes every time as the details are fetched from the server but in this project, since the server is not used, some data has been stored in arrays which are exported everywhere by the reactjs file.
 
 3. Images have been stored in the folders in the src folder itself.
+
+4. All the updates after 22nd October 2022 are optional updates done in order to impement added functionalities and/or stablise the usage on small screen devices. These can be ignored in order to assess the task as these are not a part of the challenge solution.

@@ -1,7 +1,11 @@
-.footer {
+.Footer {
     margin-top: 100px;
     width: 100%;
     background: rgb(31, 81, 255);
+}
+
+.night {
+    background-color: #333;
 }
 
 .fsubdiv1 {

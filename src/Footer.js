@@ -7,9 +7,9 @@ import { resourceData } from './ResourcesData';
 import { socData } from './SocialData';
 import { statData } from './StatsData';
 
-function Footer() {
+function Footer({theme}) {
     return (
-        <div className='footer'>
+        <div className={`Footer ${theme}`}>
             <div className='fsubdiv1'>
                 <div className='footchild'>
                     <h2> Stay in the loop </h2>

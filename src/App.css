@@ -2,8 +2,14 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
+.night {
+    background-color: #333;
+    color: #fff;
+}
+
+.light {
   background-color: whitesmoke;
+  color: #333;
 }
 
 .mainhead {

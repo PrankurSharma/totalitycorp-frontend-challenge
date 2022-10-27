@@ -6,6 +6,7 @@ import Body from './BodyComponents/Body';
 
 function App() {
   const [scrolled, set_scrolled] = useState(0);
+  const [theme, set_theme] = useState(localStorage.getItem('theme') || 'light');
     useEffect(() => {
         function handleScroll() {
             set_scrolled(window.pageYOffset);
@@ -15,13 +16,18 @@ function App() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+        document.body.className = theme;
+    }, [theme]);
 
     return (
-      <>
-          <Header scrolled={scrolled}/>
+      <div className={`App ${theme}`}>
+          <Header scrolled={scrolled} theme={theme} set_theme={set_theme} />
           <Body />
-          <Footer />
-      </>
+          <Footer theme={theme}/>
+      </div>
     );
 }
 

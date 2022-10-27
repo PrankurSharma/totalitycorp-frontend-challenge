@@ -3,5 +3,6 @@ export const settings = [
     "Favorites",
     "Watchlist",
     "My Collections",
-    "Settings"
+    "Settings",
+    "Night Mode"
 ];

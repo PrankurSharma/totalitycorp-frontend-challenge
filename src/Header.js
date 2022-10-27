@@ -5,7 +5,7 @@ import { resourceData } from './ResourcesData';
 import { statData } from './StatsData';
 import { settings } from './SettingsData';
 
-function Header({scrolled}) {
+function Header({scrolled, theme, set_theme}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const [windowSize, set_windowSize] = useState(getWindowSize());
     const [eleClick1, set_eleClick1] = useState(false);
@@ -29,7 +29,7 @@ function Header({scrolled}) {
 
     return (
         <div className="divhead">
-            <nav className={scrolled !== 0 ? "snavigation" : "navigation"}>
+            <nav className={scrolled !== 0 ? `snavigation ${theme}` : "navigation"}>
                 <a href="#"> <img className='logo' src={"./social_media_images/mylogo.png"}></img> </a>
                 <a href="#" className="brand-name">
                     OpenSea
@@ -89,7 +89,17 @@ function Header({scrolled}) {
                                 <div className='dropdown-content'>
                                     {settings.map((val) => {
                                         return (
-                                            <a href="#"> {val} </a>
+                                            <>
+                                                {(val !== 'Night Mode') ? (<a href="#"> {val} </a>) : 
+                                                (
+                                                    <a href="#"> Night Mode 
+                                                        <input type="checkbox" name='night' id='night' onClick={(e) => {
+                                                            e.target.checked ? set_theme('night') : set_theme('light');
+                                                        }} checked={theme === 'night' ? true : false} />
+                                                    </a>
+                                                )
+                                                }
+                                            </>
                                         );
                                     })}
                                 </div>
@@ -161,6 +171,13 @@ function Header({scrolled}) {
                             set_eleClick2(false);
                             set_eleClick3(false);
                         }}> Create </a>
+                    </li>
+                    <li>
+                        <a href="#"> Night Mode 
+                            <input type="checkbox" name='night' id='night' onClick={(e) => {
+                                e.target.checked ? set_theme('night') : set_theme('light');
+                            }} checked={theme === 'night' ? true : false} />
+                        </a>
                     </li>
                 </ul>
             </div>) : null}

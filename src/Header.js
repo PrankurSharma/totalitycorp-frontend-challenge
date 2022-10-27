@@ -5,7 +5,7 @@ import { resourceData } from './ResourcesData';
 import { statData } from './StatsData';
 import { settings } from './SettingsData';
 
-function Header({scrolled, theme, setTheme}) {
+function Header({scrolled}) {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const [windowSize, set_windowSize] = useState(getWindowSize());
     const [eleClick1, set_eleClick1] = useState(false);
@@ -15,15 +15,6 @@ function Header({scrolled, theme, setTheme}) {
     function getWindowSize() {
         const {innerWidth, innerHeight} = window;
         return {innerWidth, innerHeight};
-    }
-
-    const toggleTheme = () => {
-        if(theme === 'light'){
-            setTheme('night');
-        }
-        else{
-            setTheme('light');
-        }
     }
     
     useEffect(() => {

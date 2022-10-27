@@ -10,7 +10,7 @@ Since the project required us to not use any 3rd party libraries, there is an ab
 
 Some areas of the original website followed a common structure. So, ReactJS helped me use a single component multiple times.
 
-I have made the div sliding buttons with the help of flex in ReactJS. The styling of the pages is done using CSS
+I have made the div sliding buttons with the help of flex in ReactJS. The styling of the pages is done using CSS.
 
 The concept of inline-block display was also used in order to ensure that divs remain in line untill certain width.
 

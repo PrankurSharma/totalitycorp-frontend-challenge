@@ -34,6 +34,7 @@ function Header({scrolled, theme, set_theme}) {
                 <a href="#" className="brand-name">
                     OpenSea
                 </a>
+                <input className='search' placeholder='Search' />
                 <div className='dropdown'>
                     <button className='drop' onClick={() => {
                         setIsNavExpanded(!isNavExpanded);

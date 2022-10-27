@@ -27,6 +27,12 @@
     color: black;
     font-size: 1.3rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.search {
+    width: 50%;
+    height: 30px;
 }
 
 .navigation-menu {
